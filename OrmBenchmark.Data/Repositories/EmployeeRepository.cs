@@ -48,7 +48,7 @@ public class EmployeeRepository : IEmployeeRepository
     {
         using (var context = _employeeDBContextFactory.Create())
         {
-            return await context.Employees
+            return await context.Employees.AsNoTracking()
                 .Where(e => e.Age < 32 && e.Department.Id == 1)
                 .Select(s => s.Name)
                 .ToListAsync();
