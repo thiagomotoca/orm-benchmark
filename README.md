@@ -34,7 +34,7 @@ dotnet ef database update --project OrmBenchmark.Data
 Run benchmark
 --------------------
 Navigate to the folder where you have cloned this repo locally.
-Nabigate to `\orm-benchmark\OrmBenchmark` and run the below command to start the benchmark and wait for it to complete to see the benchmark summary.
+Navigate to `\orm-benchmark\OrmBenchmark` and run the below command to start the benchmark and wait for it to complete to see the benchmark summary.
 
 ```bash
 dotnet run -c Release
